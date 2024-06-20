@@ -2,6 +2,7 @@ package com.bfbrug.spring6restmvc.entities;
 
 import com.bfbrug.spring6restmvc.model.BeerStyle;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -25,6 +26,8 @@ public class Beer {
 
     @Version
     private Integer version;
+
+
     private String beerName;
     private BeerStyle beerStyle;
     private String upc;
